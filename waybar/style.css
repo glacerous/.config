@@ -1,0 +1,72 @@
+@import "../omarchy/current/theme/waybar.css";
+
+/* Reset and Global Settings */
+* {
+    background-color: transparent;
+    color: #ffffff; /* FORCE WHITE TEXT */
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-family: 'JetBrainsMono Nerd Font';
+    font-size: 13px;
+}
+
+/* BAR CONTAINER */
+window#waybar {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 10px 15px 0px 15px;
+}
+
+/* FLOATING PILLS */
+#workspaces,
+#clock,
+#cpu,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#custom-omarchy,
+#custom-update,
+#custom-screenrecording-indicator,
+#tray {
+    background-color: rgba(60, 60, 60, 0.85); /* GRAY SOLID */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 4px 14px;
+    margin: 0px 4px;
+    border-radius: 14px;
+
+    /* Make it readable on ANY wallpaper */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* WORKSPACES */
+#workspaces button {
+    padding: 0 6px;
+    color: #ffffff;
+}
+
+#workspaces button.active {
+    background-color: #ffffff;
+    color: #2b2b2b;
+    border-radius: 8px;
+}
+
+#workspaces button.empty {
+    opacity: 0.5;
+}
+
+/* MODULE SPECIFICS */
+#tray {
+    margin-right: 8px;
+}
+
+#clock {
+    font-weight: bold;
+}
+
+/* Screen recording indicator */
+#custom-screenrecording-indicator.active {
+    color: #ffffff;
+    background-color: rgba(180, 60, 60, 0.9);
+}
+
