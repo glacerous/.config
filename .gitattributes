@@ -1,2 +1,5 @@
 *.hc linguist-language=HolyC
 *.lua linguist-language=Lua
+
+# Hide CSS from the language bar
+*.css linguist-vendored
