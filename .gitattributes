@@ -1,1 +1,2 @@
-* linguist-language=HolyC
+*.hc linguist-language=HolyC
+*.lua linguist-language=Lua
